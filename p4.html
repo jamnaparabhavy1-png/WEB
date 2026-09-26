@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        body {
+            background-color: #E35336;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            width: 370px;
+            height: 610px;
+            border: 1px solid black;
+            align-items: center;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #F5F5DC;
+            margin: 20px;
+        }
+
+        img {
+            width: 330px;
+            margin-top: 30px;
+            height: 300px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .text {
+            background-color: #A0522D;
+            width: 330px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-left: 20px;
+            height: 260px;
+            margin-top: -25px;
+            border-radius: 0px 0px 10px 10px;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card:hover{
+            transform: translateY(10px);
+        }
+        h2 {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        nav {
+            display: flex;
+        }
+         a:hover {
+            background-color: aqua;
+            color: red;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background:linear-gradient(90deg,pink,lightblue);
+            transition: all 0.5s ease;
+        }
+        button:hover{
+            background: linear-gradient(270deg,pink,lightblue);
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="">Movie Explorer</a>
+    <br>
+    <ul>
+        <li><a href="./p1.html">Home</a></li>
+        <li><a href="./p4.html">Catalogue</a></li>
+        <li><a href="./p2.html">Movie Detiles</a></li>
+        <li><a href="./p3.html">About & Contact</a></li>
+    </ul>
+    <h1>Complete Movie Catalogue</h1>
+    <p>Use the form options below to filter and sort through our film database.</p>
+    <h2>Filter & Search Options</h2>
+    <label for="">Search Title / Director:</label>
+    <input type="text" placeholder="e.g. Nolan, Inception...">
+    <br>
+    <label for="">Select Genre:</label>
+    <br><br>
+    <label for="">
+        <input type="radio">
+        All Genres
+    </label>
+    <br><br>
+    <label for="">
+        <input type="radio">
+        Action
+    </label>
+    <br><br>
+    <label for="">
+        <input type="radio">
+        Science Fiction
+    </label>
+    <br><br>
+    <label for="">
+        <input type="radio">
+        Crime
+    </label>
+    <br><br>
+    <label for="">
+        <input type="radio">
+        Drama
+    </label>
+
+    <br><br>
+    <br>
+    <label for="">Sort Records By:<label>
+            <select name="" id="">
+                <option value="">Default</option>
+                <option value="">Next</option>
+                <option value="">Previous</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <button>Apply filters</button>
+            <button>reset</button>
+            <hr>
+            <h1>All Movie Records (8 Items)</h1>
+            <br>
+            <div class="content">
+
+                <div class="card">
+
+                    <img src="./images.jpg" alt="">
+                    <div class="text">
+                        <h3>Inception (2010)</h3>
+                        <p><b>Genre:</b>Science Fiction | <b>Rating:</b>★ 8.8</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>148 min | <b>Language:</b>English</p>
+                        <p> A thief who steals corporate secrets through dream-sharing technology is given the inverse
+                            task
+                            of
+                            planting an
+                            idea...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card">
+                    <img src="./download.jpg" alt="">
+                    <div class="text">
+                        <h3>The Dark Knight (2008)</h3>
+                        <p><b>Genre:</b> Action | <b>Rating:</b>★ 9.0</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>152 min | <b>Language:</b>English</p>
+                        <p> When the menace known as the Joker wreaks havoc on Gotham City, Batman must accept a great
+                            psychological test...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="./download (1).jpg" alt="">
+                    <div class="text">
+                        <h3>Intersteller (2014)</h3>
+                        <p><b>Genre:</b> Action | <b>Rating:</b>★ 8.7</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>169 min | <b>Language:</b>English</p>
+                        <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's
+                            survival...
+                        </p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="card">
+
+                    <img src="./download (2).jpg" alt="">
+                    <div class="text">
+                        <h3>Pulp Fiction</h3>
+                        <p><b>Genre:</b> Crime | <b>Rating:</b>★ 8.9</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>154 min | <b>Language:</b>English</p>
+                        <p>The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of
+                            violence...
+                        </p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="./images (1).jpg" alt="">
+                    <div class="text">
+                        <h3>The Shawshank Redemption (1994)</h3>
+                        <p><b>Genre:</b> Drama | <b>Rating:</b>★ 9.3</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>142 min | <b>Language:</b>English</p>
+                        <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption
+                            through
+                            acts
+                            of
+                            decency...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="./images (2).jpg" alt="">
+                    <div class="text">
+                        <h3>Spirited Away (2001)</h3>
+                        <p><b>Genre:</b> Animation | <b>Rating:</b>★ 8.6</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>125 min | <b>Language:</b>Japanese</p>
+                        <p>During her family's move to the suburbs, a 10-year-old girl wanders into a world ruled by
+                            gods
+                            and
+                            spirits...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="card">
+
+                    <img src="./images (3).jpg" alt="">
+                    <div class="text">
+                        <h3>The Matrix (1999)</h3>
+                        <p><b>Genre:</b> Action / Sci-fi | <b>Rating:</b>★ 8.7</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>125 min | <b>Language:</b>English</p>
+                        <p>A computer hacker learns from mysterious rebels about the true nature of his reality and his
+                            role
+                            in
+                            the
+                            war...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="./images (7).jpg" alt="">
+                    <div class="text">
+                        <h3>Parasite (2019)</h3>
+                        <p><b>Genre:</b> Thriller / Drama | <b>Rating:</b>★ 8.5</p>
+                        <p><b>Director:</b>Christopher Nolan</p>
+                        <p><b>Duration:</b>132 min | <b>Language:</b>koren</p>
+                        <p>Greed and class discrimination threaten the newly formed relationship between a wealthy and
+                            destitute
+                            family...</p>
+                        <a href="">View Details page</a>
+                    </div>
+                </div>
+            </div>
+            <h3>Page Navigation</h3>
+            <br>
+            <p>showing page 1 of 2</p>
+            <ul>
+                <li><a href="">Previous</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">Next</a></li>
+            </ul>
+            <br>
+            <p> © 2026 Movie Explorer Portal — B.Tech 1st Year Web Designing Lab Assignment</p>
+</body>
+
+</html>

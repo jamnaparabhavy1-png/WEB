@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Home</title>
+
+    <style>
+        .intro-text::before {
+            animation-name: color;
+            animation-duration: 8s;
+            content: "HEY";
+            animation-delay: 0s;
+            position: relative;
+            color: white;
+            animation-direction: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            padding-top: 250px;
+        }
+
+        .intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+
+            background-color: #07111F;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            z-index: 9999;
+
+            animation: introHide 1s ease 8s forwards;
+        }
+
+        @keyframes introHide {
+
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+        }
+
+        @keyframes color {
+            0% {
+                content: "HEY, ";
+            }
+
+            25% {
+                content: "MY NAME IS BHAVYA JAMNAPARA";
+            }
+
+            50% {
+                content: "WELCOME TO MY PROJECT";
+            }
+
+            75% {
+                content: "......";
+            }
+
+            100% {
+                content: "MOVIE EXPLORER";
+                opacity: 0;
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Metric {
+            text-align: center;
+            background-color: #00D9FF;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .value {
+            text-align: center;
+            background-color: #00D9FF;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .Description {
+            text-align: center;
+            background-color: #00D9FF;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        body {
+            background-color: #07111F;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 320px;
+            background-color: #0F1F35;
+            height: 600px;
+            transition: all 0.5s ease;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .t {
+            text-align: center;
+            background-color: white;
+            margin-top: -15px;
+            border-radius: 0px 0px 10px 10px;
+            padding: 10px;
+            width: 280px;
+            color: black;
+            margin-left: 10px;
+        }
+
+        .box img {
+            border-radius: 10px 10px 0px 0px;
+            margin: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .text div {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .text {
+            background-color: #EC4899;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            background-color: aqua;
+            color: red;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+
+        @media (max-width: 1000px) {
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro-text {
+                font-size: 30px;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="intro">
+
+        <div class="intro-text"></div>
+
+    </div>
+    <main>
+
+        <a href="Movie Explorer">Movie Explorer</a>
+        <ul>
+            <li><a href="./p1.html">Home</a></li>
+            <li><a href="./p4.html">Catalogue</a></li>
+            <li><a href="./p2.html">Movie Detiles</a></li>
+            <li><a href="./p3.html">About & Contact</a></li>
+        </ul>
+
+
+        <h1>
+            Welcome to Movie Explorer Portal
+        </h1>
+
+        <br>
+
+
+        <p>
+            Discover top-rated cinematic masterpieces,
+            explore detailed cast profiles, and browse movies
+            across various genres. Designed for B.Tech Web
+            Designing Lab.
+        </p>
+
+
+        <!-- MOVIE CARDS -->
+
+        <div class="box">
+
+
+            <div class="card">
+
+                <img src="./images.jpg" alt="Cannot load image" height="300px" width="300px">
+
+                <div class="t">
+
+                    <h3>Inception</h3>
+
+                    <p>
+                        <b>Genre:</b> Science Fiction |
+                        <b>Duration:</b> 148 min
+                    </p>
+
+                    <p>
+                        <b>Release Date:</b> 2010 |
+                        <b>Rating:</b> ★ 8.8 / 10
+                    </p>
+
+                    <a href="Read Full Details">
+                        Read Full Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="./download.jpg" alt="Cannot load image" height="300px" width="300px">
+
+                <div class="t">
+
+                    <h3>The Dark Knight</h3>
+
+                    <p>
+                        <b>Genre:</b> Action/Crime |
+                        <b>Duration:</b> 152 min
+                    </p>
+
+                    <p>
+                        <b>Release Date:</b> 2008 |
+                        <b>Rating:</b> ★ 9.0 / 10
+                    </p>
+
+                    <p>
+                        When the menace known as the Joker
+                        wreaks havoc and chaos on Gotham City,
+                        Batman must accept one of the greatest
+                        psychological tests of his ability.
+                    </p>
+
+                    <a href="Read Full Details">
+                        Read Full Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="./download (1).jpg" alt="Cannot load image" style="height:300px;width:300px;">
+
+                <div class="t">
+
+                    <h3>Interstellar</h3>
+
+                    <p>
+                        <b>Genre:</b> Sci-Fi / Drama |
+                        <b>Duration:</b> 169 min
+                    </p>
+
+                    <p>
+                        <b>Release Date:</b> 2014 |
+                        <b>Rating:</b> ★ 8.7 / 10
+                    </p>
+
+                    <p>
+                        A team of explorers travel through
+                        a wormhole in space in an attempt to
+                        ensure humanity's survival.
+                    </p>
+
+                    <a href="Read Full Details">
+                        Read Full Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="./download (2).jpg" alt="Cannot load image" style="height:300px;width:300px;">
+
+                <div class="t">
+
+                    <h3>Pulp Fiction</h3>
+
+                    <p>
+                        <b>Genre:</b> Crime / Drama |
+                        <b>Duration:</b> 154 min
+                    </p>
+
+                    <p>
+                        <b>Release Date:</b> 1994 |
+                        <b>Rating:</b> ★ 8.9 / 10
+                    </p>
+
+                    <p>
+                        The lives of two mob hitmen,
+                        a boxer, a gangster and his wife,
+                        and a pair of diner bandits intertwine.
+                    </p>
+
+                    <a href="Read Full Details">
+                        Read Full Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <br>
+
+
+        <!-- ANALYTICS -->
+
+        <h2>Portal Summary Analytics</h2>
+
+
+        <div class="content">
+
+
+            <div class="text">
+
+                <div class="Metric">
+                    <b>Metric</b>
+                </div>
+
+                <div>Total Catalogue Movie</div>
+
+                <div>Average User Rating</div>
+
+                <div>Available Genres</div>
+
+                <div>Supported Languages</div>
+
+            </div>
+
+
+
+            <div class="text">
+
+                <div class="value">
+                    <b>Value</b>
+                </div>
+
+                <div>8 titles</div>
+
+                <div>8.7 / 10</div>
+
+                <div>5 categories</div>
+
+                <div>English, Japanese, Korean</div>
+
+            </div>
+
+
+
+            <div class="text">
+
+                <div class="Description">
+                    <b>Description</b>
+                </div>
+
+                <div>
+                    Curated database entries available
+                    for static browsing
+                </div>
+
+                <div>
+                    Calculated across all listed titles
+                </div>
+
+                <div>
+                    Action, Sci-Fi, Crime, Drama, Animation
+                </div>
+
+                <div>
+                    International film metadata support
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <h2>Browse by Categories</h2>
+
+
+        <ul>
+
+            <li>
+                <a href="Action Movies">
+                    Action Movie
+                </a>
+            </li>
+
+            <li>
+                <a href="Science Fiction">
+                    Science Fiction
+                </a>
+            </li>
+
+            <li>
+                <a href="Crime & Mystery">
+                    Crime & Mystery
+                </a>
+            </li>
+
+            <li>
+                <a href="Drama & Romance">
+                    Drama & Romance
+                </a>
+            </li>
+
+            <li>
+                <a href="Animated Masterpieces">
+                    Animated Masterpieces
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div>
+            © 2026 Movie Explorer Portal —
+            B.Tech 1st Year Web Designing Lab Assignment
+        </div>
+
+
+        <footer>
+            Department of Computer Science & Engineering
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
